@@ -75,8 +75,9 @@ Function | Description
 **Make sure the NRC Lexicon .txt file is in the same directory!**
  
 # Analysis:
-Markup : ![picture alt](5.jpg "Title is optional")
-
+In a seperate script, I performed a Radar Chart analysis to see the proportion of songs in each classification for both the sentiment and emotional analysis. I wanted to see the spread and if emotional analysis really does provide a higher dimension of information/interpretation.
+Emotional Analysis : ![picture alt](5.png "Emotional Analysis")
+Emotional Analysis : ![picture alt](6.png "Sentiment Anlaysis Analysis")
   
 # Limitations
 The code can be quite slow depending on your connection and occasionally your device, so I did implement some multiprocessing for some functions, however, there is a potential for deadlocks. Future work includes implementing the system with a stream layer approach as opposed to a batch layer. At the moment, the script waits until all the computation and functions are done before it writes to the .CSV file, so a continous writing to the .CSV file in the case of a crash or timeout is ideal. Stay tuned :)!
