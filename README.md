@@ -12,6 +12,9 @@ This is a set of Python functions and scripts that aid in the process of getting
 
 I recommend setting up your accounts, client keys and tokens after giving this a brief read to see if it suits your needs.
 
+## Acknowledgements
+The web crawling `search()` function was heavily inspired by Github user @jasonqng and his code here: https://github.com/jasonqng/genius-lyrics-search/blob/master/search.py
+
 ## Overview / How it Works
 The first step of the process is to retrieve the listening history of users that are found in the Two Million Last.FM User Profile (TMLUP) dataset. The API allows you to get the entire users listening history but the Python library import I used only allows you to get 1,000 *at a time*. If you'd like more than 1,000 songs per user, you'd have to loop over the get_user_tacks() function and altering the 'time_to' parameter to the date of the most recent song retrieved from the previous get_user_tracks() return. More information on how to do this can be found at: https://github.com/pylast/pylast/issues/302
 
